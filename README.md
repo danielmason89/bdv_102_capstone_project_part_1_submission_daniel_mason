@@ -1,6 +1,6 @@
-# Documentation - Detailed Use Cases: Online ECommerce Store/Platform
+# Documentation - Detailed Use Cases: Swiftcart Online ECommerce Store/Platform
 
-This document outlines key use cases for an eCommerce store/platform, detailing actions performed by the user and corresponding backend database operations. The use cases include browsing and viewing products, adding products to the shopping cart, placing orders, and updating product information.
+This document outlines key use cases for Swiftcart eCommerce store/platform, detailing actions performed by the user and corresponding backend database operations. The use cases include browsing and viewing products, adding products to the shopping cart, placing orders, and updating product information.
 
 ---
 
@@ -79,7 +79,7 @@ This document outlines key use cases for an eCommerce store/platform, detailing 
 
 ---
 
-## Key Customer CRUD Operations for Online Ecommerce Platform
+## Key Customer CRUD Operations for Swiftcart Online Ecommerce Platform
 
 ## 1) Create a New User
 - **Action**: `POST /users`
@@ -113,7 +113,7 @@ This document outlines key use cases for an eCommerce store/platform, detailing 
 
 ## Summary of Operations
 
-The use cases above highlight the essential operations for an online eCommerce platform, with each case focusing on customer interaction and backend database operations. The following is a quick summary:
+The use cases above highlight the essential operations for Swiftcart online eCommerce platform, with each case focusing on customer interaction and backend database operations. The following is a quick summary:
 
 | Use Case                    | Create Operation                          | Read Operation                      | Update Operation                        | Delete Operation                         |
 |-----------------------------|-------------------------------------------|--------------------------------------|-----------------------------------------|------------------------------------------|
@@ -122,4 +122,4 @@ The use cases above highlight the essential operations for an online eCommerce p
 | Place Order                  | Insert new order record                   | Retrieve customer & cart details    | Update order status                     | Cancel order                             |
 | Update Product Info          | Create/update product record              | Fetch product details               | Modify product details                   | Delete product                           |
 
-This document serves as a reference for understanding key workflows in an eCommerce environment and helps guide the backend implementation.
+This document serves as a reference for understanding key workflows in the Swiftcart eCommerce environment to help guide the backend implementation.
