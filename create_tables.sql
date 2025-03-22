@@ -1,4 +1,5 @@
 -- 1. USERS
+-- Purpose: Stores user login and contact info
 CREATE TABLE site_user (
     id SERIAL PRIMARY KEY,
     email_address VARCHAR(50) NOT NULL UNIQUE,
@@ -7,12 +8,14 @@ CREATE TABLE site_user (
 );
 
 -- 2. PRODUCT CATEGORY
+-- Purpose: Stores product categories (Electronics, Books, etc.)
 CREATE TABLE product_category (
     id SERIAL PRIMARY KEY,
     category_name VARCHAR(50) NOT NULL
 );
 
 -- 3. PRODUCT
+-- Purpose: Stores details of each product
 CREATE TABLE product (
     id SERIAL PRIMARY KEY,
     category_id INT NOT NULL,
@@ -26,6 +29,7 @@ CREATE TABLE product (
 );
 
 -- 4. SHOPPING CART
+-- Purpose: Stores which user currently owns this cart
 CREATE TABLE shopping_cart (
     id SERIAL PRIMARY KEY,
     user_id INT NOT NULL,
@@ -33,6 +37,7 @@ CREATE TABLE shopping_cart (
 );
 
 -- 5. SHOPPING CART ITEM
+-- Purpose: Links products to a specific shopping cart
 CREATE TABLE shopping_cart_item (
     id SERIAL PRIMARY KEY,
     cart_id INT NOT NULL,
@@ -43,6 +48,7 @@ CREATE TABLE shopping_cart_item (
 );
 
 -- 6. SHOP ORDER
+-- Purpose: Stores final orders placed by users
 CREATE TABLE shop_order (
     id SERIAL PRIMARY KEY,
     user_id INT NOT NULL,
@@ -55,6 +61,7 @@ CREATE TABLE shop_order (
 );
 
 -- 7. ORDER LINE
+-- Purpose: Stores each product line-item in an order
 CREATE TABLE order_line (
     id SERIAL PRIMARY KEY,
     order_id INT NOT NULL,
