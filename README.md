@@ -79,33 +79,33 @@ This document outlines key use cases for an eCommerce store/platform, detailing 
 
 ---
 
-## Key CRUD Operations for Online Ecommerce Platform
+## Key Customer CRUD Operations for Online Ecommerce Platform
 
-## Create a New User
+## 1) Create a New User
 - **Action**: `POST /users`
 - **Effect on DB**: Insert new row in `site_user` table.
 
 ---
 
-## Retrieve List of Products
+## 2) Retrieve List of Products
 - **Action**: `GET /products`
 - **Effect on DB**: Select rows from `product` table.
 
 ---
 
-## Add an Item to Cart
+## 3) Add an Item to Cart
 - **Action**: `POST /cart/{userId}/items`
 - **Effect on DB**: Insert a new row in `shopping_cart_item` table.
 
 ---
 
-## Update Quantity in Cart
+## 4) Update Quantity in Cart
 - **Action**: `PUT /cart/{cartId}/items/{itemId}`
 - **Effect on DB**: Update `shopping_cart_item.quantity` in the database.
 
 ---
 
-## Place an Order
+## 5) Place an Order
 - **Action**: `POST /orders`
 - **Effect on DB**: Insert a new record in `shop_order` table and insert corresponding `order_line` items.
 
