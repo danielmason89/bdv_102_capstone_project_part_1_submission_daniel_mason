@@ -1,6 +1,4 @@
-# bdv_102_capstone_project_part_1_submission_daniel_mason
-
-## Documentation - Detailed Use Cases for an Online ECommerce Store/Platform
+# Documentation - Detailed Use Cases for an Online ECommerce Store/Platform
 
 This document outlines key use cases for an eCommerce store/platform, detailing actions performed by the user and corresponding backend database operations. The use cases include browsing and viewing products, adding products to the shopping cart, placing orders, and updating product information.
 
