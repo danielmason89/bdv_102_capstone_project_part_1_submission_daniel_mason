@@ -1,3 +1,8 @@
+Prerequisite
+
+CREATE DATABASE swiftcart;
+\c swiftcart;  -- (in PostgreSQL)
+
 -- 1. USERS
 -- Purpose: Stores user login and contact info
 CREATE TABLE site_user (
